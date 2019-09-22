@@ -1,21 +1,8 @@
-#import contextlib
-#import json
-##import logging
-#import os
-#import pickle
-#import typing
+#import logging
 from typing import Optional, Text, Union, Dict, Any
 
-#import itertools
-
-# noinspection PyPep8Naming
-#from time import sleep
-
-#from rasa.core.actions.action import ACTION_LISTEN_NAME
-#from rasa.core.brokers.event_channel import EventChannel
 from rasa.core.domain import Domain
 from rasa.core.trackers import DialogueStateTracker, EventVerbosity
-#from rasa.utils.common import class_from_module_path
 
 from rasa.core.tracker_store import TrackerStore, InMemoryTrackerStore, RedisTrackerStore, MongoTrackerStore, SQLTrackerStore
 
