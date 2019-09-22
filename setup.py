@@ -1,11 +1,11 @@
 from setuptools import setup
 
-setup(name='rasa_aas',
-      version='0.1',
-      description='The funniest joke in the world',
-      url='http://github.com/storborg/funniest',
-      author='Flying Circus',
-      author_email='flyingcircus@example.com',
+setup(name='rasa-ext-plugin',
+      version='0.0.2',
+      description='Rasa plugins to extend state and store functionalities',
+      url='http://github.com/appliedsoul/rasa_ext_plugin',
+      author='Noel Gaur',
+      author_email='noel.gaur@analyticservice.net',
       license='MIT',
-      packages=['rasa_aas'],
+      packages=['rasa'],
       zip_safe=False)
