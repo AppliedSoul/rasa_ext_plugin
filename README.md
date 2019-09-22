@@ -32,22 +32,22 @@ Extends rasa core through component plugin to include:
   ```yaml
   ###########################################################
   # limiter tracker for existing store types : 
-  # rasa_aas_core.tracker_store.InMemoryLimiterTrackerStore
-  # rasa_aas_core.tracker_store.RedisLimiterTrackerStore
-  # rasa_aas_core.tracker_store.MongoLimiterTrackerStore
-  # rasa_aas_core.tracker_store.SQLLimiterTrackerStore
+  # rasa_ext_plugin.core.tracker_store.InMemoryLimiterTrackerStore
+  # rasa_ext_plugin.core.tracker_store.RedisLimiterTrackerStore
+  # rasa_ext_plugin.core.tracker_store.MongoLimiterTrackerStore
+  # rasa_ext_plugin.core.tracker_store.SQLLimiterTrackerStore
   #
   # All limiter tracker store optionally accepts: 
   # max_event_history - limit maximum events tracked by tracker
   ############################################################
   
   #tracker_store:
-  #  type: rasa_aas.core.tracker_store.InMemoryLimiterTrackerStore
+  #  type: rasa_ext_plugin.core.tracker_store.InMemoryLimiterTrackerStore
   #  url: localhost
   #  max_event_history: 40
     
   tracker_store:
-      type: rasa_aas.core.tracker_store.RedisLimiterTrackerStore
+      type: rasa_ext_plugin.core.tracker_store.RedisLimiterTrackerStore
       url: localhost
       port: 6379
       db: 0
