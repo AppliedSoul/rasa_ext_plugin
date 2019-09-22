@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 # perform the setup
 setup(name='rasa-ext-plugin',
-      version='0.0.2',
+      version='0.0.3',
       description='Rasa plugins to extend state and store functionalities',
       long_description=README,
       long_description_content_type="text/markdown",
@@ -22,6 +22,7 @@ setup(name='rasa-ext-plugin',
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
       ],
-      packages=['rasa_ext_plugin'],
+      packages= find_packages(),
+      #include_package_data=True,
       install_requires=['rasa']
     )
