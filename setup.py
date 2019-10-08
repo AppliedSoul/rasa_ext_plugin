@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 # perform the setup
 setup(name='rasa-ext-plugin',
-      version='0.0.3',
+      version='0.0.4',
       description='Rasa plugins to extend state and store functionalities',
       long_description=README,
       long_description_content_type="text/markdown",
